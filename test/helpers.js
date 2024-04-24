@@ -1,21 +1,17 @@
-const chai = require('chai')
-const sinon = require('sinon')
-global.expect = chai.expect
-const fs = require('fs')
-const jsdom = require('mocha-jsdom')
-const path = require('path')
-const babel = require('babel-core');
+// helpers.js
 
-const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf-8')
+let cats = ["Milo", "Otis", "Garfield"];
 
-const babelResult = babel.transformFileSync(
-  path.resolve(__dirname, '..', 'index.js'), {
-    presets: ['env']
-  }
-);
+function destructivelyAppendCat(name) {
+    cats.push(name);
+}
 
-const src = babelResult.code
+function destructivelyPrependCat(name) {
+    cats.unshift(name);
+}
 
-jsdom({
-  html, src
-});
+module.exports = {
+    destructivelyAppendCat,
+    destructivelyPrependCat,
+    cats // Exporting cats array for testing purposes
+};

@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-24T18:43:57.432Z",
+    "end": "2024-04-24T18:43:57.448Z",
+    "duration": 16
+  },
+  "tests": [
+    {
+      "title": "appends a cat to the end of the cats array",
+      "fullTitle": "Array functions destructivelyAppendCat(name) appends a cat to the end of the cats array",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "prepends a cat to the beginning of the cats array",
+      "fullTitle": "Array functions destructivelyPrependCat(name) prepends a cat to the beginning of the cats array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "appends a cat to the end of the cats array",
+      "fullTitle": "Array functions destructivelyAppendCat(name) appends a cat to the end of the cats array",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "prepends a cat to the beginning of the cats array",
+      "fullTitle": "Array functions destructivelyPrependCat(name) prepends a cat to the beginning of the cats array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
